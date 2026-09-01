@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Mochi Bloom — Mobile Prototype</title>
   <style>
     html, body { margin: 0; padding: 0; background: #fff; }
@@ -15,6 +18,9 @@
   </style>
 </head>
 <body>
-  <img src="./mb-site-mobile.png" alt="Mochi Bloom mobile landing page prototype">
+  <img id="prototype" alt="Mochi Bloom mobile landing page prototype">
+  <script>
+    document.getElementById('prototype').src = './mb-site-mobile.png?v=' + Date.now();
+  </script>
 </body>
 </html>
